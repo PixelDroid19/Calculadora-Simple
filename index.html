@@ -3,34 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
 
   <body>
     <div id="app">
-      <input type="text" placeholder="0" id="show" />
+      <div>
+        <input type="text" placeholder="0" class="display" id="show" />
 
-      <div class="key_button">
-        <button data-action="+" onclick="referenceButton(this)">+</button>
-        <button data-action="-" onclick="referenceButton(this)">-</button>
-        <button data-action="*" onclick="referenceButton(this)">*</button>
-        <button data-action="/" onclick="referenceButton(this)">/</button>
-        <button data-value="1" onclick="referenceButton(this)">1</button>
-        <button data-value="2" onclick="referenceButton(this)">2</button>
-        <button data-value="3" onclick="referenceButton(this)">3</button>
-        <button data-value="4" onclick="referenceButton(this)">4</button>
-        <button data-value="5" onclick="referenceButton(this)">5</button>
-        <button data-value="6" onclick="referenceButton(this)">6</button>
-        <button data-value="7" onclick="referenceButton(this)">7</button>
-        <button data-value="8" onclick="referenceButton(this)">8</button>
-        <button data-value="9" onclick="referenceButton(this)">9</button>
-        <button data-value="0" onclick="referenceButton(this)">0</button>
-        <button data-action="." onclick="referenceButton(this)">.</button>
-        <button data-action="clear" onclick="Clear()">C</button>
-        <button data-action="equal" onclick="calcular()">=</button>
+        <div class="key_button">
+          <button data-action="+">+</button>
+          <button data-action="-">-</button>
+          <button data-action="*">*</button>
+          <button data-action="/">/</button>
+          <button data-value="1">1</button>
+          <button data-value="2">2</button>
+          <button data-value="3">3</button>
+          <button data-value="4">4</button>
+          <button data-value="5">5</button>
+          <button data-value="6">6</button>
+          <button data-value="7">7</button>
+          <button data-value="8">8</button>
+          <button data-value="9">9</button>
+          <button data-value="0">0</button>
+          <button data-action=".">.</button>
+          <button data-action="clear">C</button>
+          <button data-action="equal">=</button>
+        </div>
       </div>
-    </div>
+      </div>
+      
     <script src="/main.js"></script>
   </body>
 </html>
